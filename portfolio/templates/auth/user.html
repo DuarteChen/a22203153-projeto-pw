@@ -1,0 +1,14 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+
+<div class="login-wrapper">
+    <div class="login-container">
+        <h2>Welcome {{ username }}</h2>
+        <button id ="loginButton"><a href="{% url 'portfolio:logout' %}">Logout</a></button>
+    </div>
+
+
+</div>
+
+{% endblock %}

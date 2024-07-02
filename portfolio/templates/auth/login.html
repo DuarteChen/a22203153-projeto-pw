@@ -11,10 +11,12 @@
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit" id ="loginButton">Login</button>
         </form>
-        <!-- Novo botão -->
-            {% load socialaccount %}
-            {% providers_media_js %}
-            <a href="{% provider_login_url 'google' %}"><button>Login with Google<button></a>
+        <a href= "{% url 'portfolio:registo' %}" id ="loginButton">Registo</a>
+        <!-- Google -->
+        {% load socialaccount %}
+        {% providers_media_js %}
+
+        <a href="{% provider_login_url 'google' %}" id ="loginButton">Login with Google</a>
     </div>
 
 
