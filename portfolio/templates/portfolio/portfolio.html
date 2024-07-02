@@ -1,0 +1,119 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<section class="welcome">
+  <div class="container welcome-container">
+    <div class="welcome-info">
+      <h2 class="title">Olá!</h2>
+      <div class = "subtitleContainer">
+        <span class="subtitle">Sou o </span>
+        <div class="container_name">
+            <span>D</span><span>u</span><span>a</span><span>r</span><span>t</span><span>e</span><span> </span><span>C</span><span>h</span><span>e</span><span>n</span>
+        </div>
+      </div>
+      <p class="description">Sou estudante da Licenciatura em Engenharia Informática na Universidade Lusófona.</p>
+      <div class="group-buttons">
+        <a href="#cursos" >Universidade</a>
+        <a href="#aboutMe" class="button_enfatizado">Get to know MeByMe</a>
+      </div>
+    </div>
+      <img class="welcome-thumbnail" src="{% static 'DuarteChen.png' %}" alt="Duarte Chen"/>
+    </div>
+</section>
+
+
+
+
+
+<section class="welcome aboutMe" id="aboutMe">
+    <div class="container welcome-container aboutMe_container">
+
+        <div class ="generalInfo">
+
+            <img id="jumping" src="{% static 'duartejumping.png' %}" alt="Duarte Chen"/>
+
+            <div class="myDescriptions">
+                <span class= "myDescriptions_nome">Duarte Chen</span>
+
+
+                <span class = "descricao">Sou um jovem estudante apaixonado pela aventura, com um fascínio inabalável pela programação e pela complexidade do mundo que nos rodeia.
+                                        <br>Desde pequeno que sou curioso e sempre gostei imenso de desvendar os segredos da tecnologia e, sobretudo, as suas valências.
+                                        <br>Anseio por aprender cada vez mais e por me superar a mim próprio.</span>
+                <span class = "descricao aspiracao">Anseio por chegar aos pícaros da felicidade!</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="welcome courses" id="cursos">
+
+  <div class="welcome-container container">
+
+<div class="year_and_subjects_Container">
+
+
+        {% for year in "123" %}
+
+        <div class = "year_and_subjects">
+                <div class = "universityYear">
+                    <h2>{{ year }}º Ano</h2>
+                </div>
+                <div class = "subjectsContainer">
+                    <ul>
+                        {% for cadeira in subjects %}
+                            {% if cadeira.year|stringformat:"i" == year %}
+                                <li>
+                                    <a>{{ cadeira.name }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        {% endfor %}
+</div>
+
+        <div class = "year_and_subjects_mobileContainer">
+        {% for year in "123" %}
+
+                <div class = "year_and_subjects_mobile">
+
+                    <div class = "universityYear">
+                        <h2>{{ year }}º Ano</h2>
+                    </div>
+                    <div class = "subjectsContainer">
+                        <ul>
+                            {% for cadeira in subjects %}
+                                {% if cadeira.year|stringformat:"i" == year %}
+                                    <li>
+                                        <a>{{ cadeira.name }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+
+        {% endfor %}
+            </div>
+
+
+
+    </div>
+
+</section>
+
+{% endblock %}

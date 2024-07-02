@@ -1,0 +1,26 @@
+[
+  {
+    "projectImage": "",
+    "name": "Jogo das Tendas",
+    "description": "Desenvolver uma grelha 2D que simule o terreno do jogo, com árvores distribuídas aleatoriamente. Permitir que o jogador coloque tendas junto às árvores, assegurando que cada tenda esteja ligada apenas a uma árvore. Implementar regras para assegurar que as tendas não se toquem, nem mesmo na diagonal, e criar uma interface de linha de comando para a interação do jogador com o jogo.",
+    "conceitosAplicados": ["Kotlin"],
+    "youtubeVideo": "",
+    "gitHub": "https://github.com/DuarteChen/JogoDasTendas"
+  },
+  {
+    "projectImage": "",
+    "name": "Rock in DEISI",
+    "description": "Desenvolver uma aplicação de linhas de comando em Java que permite realizar queries relativamente sofisticadas sobre uma base de dados real contendo informações sobre músicas e artistas dos últimos 100 anos, obtidas de repositórios públicos. A base de dados é representada em ficheiros CSV e os alunos devem implementar estruturas de dados em memória para responder às queries eficientemente.",
+    "conceitosAplicados": ["Algoritmos de ordenação e pesquisa", "Deteção de bottlenecks", "Tecnologias utilizadas"],
+    "youtubeVideo": "",
+    "gitHub": ""
+  },
+  {
+    "projectImage": "",
+    "name": "DEISI Chess",
+    "description": "Criação de um jogo de Xadrez! Na primeira parte deste projeto os alunos são desafiados a criar a lógica por trás deste jogo, sendo que vão começar apenas a jogar com Reis. Na segunda parte vão ser incorporadas as outras peças de maneira a completar este jogo.",
+    "conceitosAplicados": ["Diagramas UML", "Tecnologias usadas"],
+    "youtubeVideo": "",
+    "gitHub": "https://github.com/DuarteChen/DEISI-Chess"
+  }
+]

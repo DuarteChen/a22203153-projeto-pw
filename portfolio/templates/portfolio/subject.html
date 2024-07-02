@@ -1,0 +1,82 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+
+<div class = "welcome">
+
+    <h2>{{ subject.year }}º ano - {{ subject.semester }}º semestre</h2>
+
+    <h2>Semester</h2>
+    <p>{{ subject.get_semester_display }}</p>
+
+    <h2>Course</h2>
+        <p>{{ subject.course.name }}</p>
+
+
+
+    <h1>{{ subject.name }}</h1>
+
+    <h2>Scientific Area</h2>
+    {% if subject.scientificArea %}
+        <p>{{ subject.scientificArea.name }}</p>
+    {% else %}
+        <p>No scientific area assigned.</p>
+    {% endif %}
+
+    <h2>Presentation</h2>
+    <p>{{ subject.apresentacao }}</p>
+
+
+    <h2>Teacher(s)</h2>
+    <ul>
+        {% for teacher in subject.teacher.all %}
+            <li>{{ teacher.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Program Concepts</h2>
+    <ul>
+        {% for concept in subject.programa.all %}
+            <li>{{ concept.name }}</li>
+        {% endfor %}
+    </ul>
+
+
+
+    <h2>Project</h2>
+    {% if subject.project %}
+        <div>
+            <h3>{{ subject.project.name }}</h3>
+            {% if subject.project.projectImage %}
+                <img src="{{ subject.project.projectImage.url }}" alt="{{ subject.project.name }}">
+            {% endif %}
+            <p>{{ subject.project.description }}</p>
+            {% if subject.project.youtubeVideo %}
+                <p>Watch the video: <a href="{{ subject.project.youtubeVideo }}">{{ subject.project.youtubeVideo }}</a></p>
+            {% endif %}
+            {% if subject.project.gitHub %}
+                <p>GitHub: <a href="{{ subject.project.gitHub }}">{{ subject.project.gitHub }}</a></p>
+            {% endif %}
+            <h4>Applied Concepts:</h4>
+            <ul>
+                {% for concept in subject.project.conceitosAplicados.all %}
+                    <li>{{ concept.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% else %}
+        <p>No project assigned.</p>
+    {% endif %}
+
+
+    <h2>ECTS</h2>
+    <p>{{ subject.ects }}</p>
+
+    <h2>Grade</h2>
+    <p>{{ subject.nota }}</p>
+
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,64 @@
+<html lang="pt">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão Meteorológica</title>
+    <link rel="icon" type="image/x-icon" href="{% static '{{ iconUrl }}' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'meteo/css/weather.css' %}">
+    <script src="{% static 'meteo/js/events.js' %}"></script>
+</head>
+
+<body>
+<div class = "backAndWeather">
+    <a href="{% url 'portfolio:portfolio' %}" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back
+    </a>
+
+    <div class="weather_container">
+        <div class="citySelectorContainer">
+            <label for="citySelector">Cidade:</label>
+            <form method="post" action="{% url 'meteo:previsao' %}">
+                {% csrf_token %}
+                {{ form.idCidade }}
+                <button type="submit">Atualizar</button>
+            </form>
+        </div>
+
+        <div class="previsoes">
+            <div class="previsao">
+                <h1>{{ cidade }}</h1>
+                <h2>{{ data }}</h2>
+                <p>Temperatura Mínima: {{ temperatura_minima }}°C</p>
+                <p>Temperatura Máxima: {{ temperatura_maxima }}°C</p>
+                <p>{{ descricao_tempo }}</p>
+                <img id="iconeTempo" src="{{ iconUrl }}" alt="Ícone do Tempo">
+            </div>
+            <div class="proximosDias">
+                <h2>Previsão para os Próximos Dias</h2>
+                <div class="cincoDias_container">
+                    {% for previsao in previsoes %}
+                        <div class="cincoDias_info">
+                            <p class = "date">{{ previsao.data }}</p>
+                            <p>Min: {{ previsao.temperatura_minima }}°C</p>
+                            <p>Max: {{ previsao.temperatura_maxima }}°C</p>
+
+                            <img src="{{ previsao.icon_url }}" alt="Ícone do Tempo">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

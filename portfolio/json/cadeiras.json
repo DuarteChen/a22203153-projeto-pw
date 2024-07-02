@@ -1,0 +1,372 @@
+[
+    {
+        "teacher" : ["Cristiane Ferreira","Aleksandar Mikovic", "Cristina Maria Ribeiro Guerra"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Mecânica clássica, eletrostátíca e corrente contínua.",
+        "programa" : [
+            {"name":"Grandezas físicas, dimensões e sistemas de unidades.", "description" : ""}, {"name":"Referencial, posição e trajetória.", "description" : ""}, {"name":"Movimento unidimensional.", "description" : ""}, {"name":"Movimento no espaço.", "description" : ""}, {"name":"Projéteis e movimento circular.", "description" : ""}, {"name":"Leis de Newton.", "description" : ""}, {"name":"Tipos de forças, força gravitacional.", "description" : ""}, {"name":"Aplicações de Leis de Newton", "description" : "plano inclinado, rodelas, mola oscilatória, pendulo."}, {"name":" Trabalho. Forças conservativas e energia potencial.", "description" : ""}, {"name":"Conservação da energia mecânica.", "description" : ""}, {"name":"Centro de massa, impulso e momento linear.", "description" : ""}, {"name":"Colisões.", "description" : ""}, {"name":"Momento de uma força, momento de inércia e momento angular.", "description" : ""}, {"name":"Lei de Coulomb, campo elétrico.", "description" : ""}, {"name":"Potencial elétrico e capacitores.", "description" : ""}, {"name":"Corrente elétrica e resistência elétrica.", "description" : ""}, {"name":"Circuitos elétricos.", "description" : ""}, {"name":"Leis de Kirchhoff.", "description" : ""}
+        ],
+        "name": "Fundamentos de Física",
+        "semester": 1,
+        "curricularYear": 1,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-7336"
+    },
+    {
+        "teacher" : ["Pedro Hugo De Queirós Alves", "Lucio Studer Ferreira"
+
+        ],
+        "project" : "Jogo das Tendas",
+        "apresentacao" : "Esta é uma disciplina fundamental na formação de qualquer profissional da área de Informática pois introduz os conceitos básicos da programação, sobre os quais assentarão muitas disciplinas subsequentes como Linguagens de Programação I e II, Algoritmia e Estruturas de Dados, Programação Web, Computação Móvel, etc. Mais do que aprender uma linguagem de programação, o aluno aprende a pensar como um programador, analisando problemas e desenhando algoritmos que os resolvam recorrendo a fluxogramas e a programas escritos em Kotlin, uma linguagem promissora que combina as melhores características das linguagens modernas mais populares (Java, Python, etc.) Dado ser o primeiro contacto de muitos alunos com o tópico da Programação, reveste-se de uma importância especial na aquisição de conhecimentos primordiais mas também na sua motivação. Mais do que aprender a programar, os alunos aprendem a gostar de programar.",
+        "programa" : [
+        {"name":"Introdução à programação.", "description" : ""}, {"name":"Algoritmos, fluxogramas, pseudo-código.", "description" : ""}, {"name":"Sintaxe e semântica das linguagens.", "description" : ""}, {"name":"Elementos da sintaxe, estrutura de um programa.", "description" : ""}, {"name":"Declarações e atribuições. Tipos primitivos.", "description" : ""}, {"name":"Expressões aritméticas, expressões lógicas.", "description" : ""}, {"name":"Entradas e saídas de dados. Selecção. Repetição.", "description" : ""}, {"name":"Funções. Arrays uni-dimensionais e bi-dimensionais.", "description" : ""}, {"name":"Tratamento de erros.", "description" : ""}, {"name":"Leitura e escrita de ficheiros.", "description" : ""}, {"name":"Boas práticas de programação imperativa"}
+    ],
+        "name": "Fundamentos de Programação",
+        "semester": 1,
+        "curricularYear": 1,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-7337"
+    },
+    {
+        "teacher" : ["Maria José De Almeida E Silva"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Na UC de Matemática Discreta pretende-se contribuir para a aquisição de um conjunto de competências nos alunos: capacidade de assimilar informação e de a comunicar; capacidade de expressão escrita; capacidade de expressão oral e capacidade de raciocínio matemático. Para tal, serão estudados conceitos de lógica matemática, teoria de conjuntos e teoria de números.",
+        "programa" : [
+            {"name":"Cálculo proposicional e quantificadores.", "description" : ""}, {"name":"Provas.", "description" : ""}, {"name":"Teoria de conjuntos.", "description" : ""}, {"name":"Funções.", "description" : ""}, {"name":"Teoria de números", "description" : ""}
+        ],
+        "name": "Matemática Discreta",
+        "semester": 1,
+        "curricularYear": 1,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-1656"
+    },
+    {
+        "teacher" : ["Andre Vieira Vassalo Da Fonseca"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta disciplina abrange os métodos fundamentais de Cálculo associados a funções reais de variável real. É uma área transversal a todas as engenharias e demais cursos de cariz científico. Abrange os métodos clássicos de cálculo diferencial e Integral a uma dimensão. ",
+        "programa" : [
+            {"name":"Lógica Matemática.", "description" : "Designação e proposição. Valor lógico de uma proposição. Conjunção e disjunção de proposições. Conjunto, interseção e união de conjuntos."}, {"name":"Os números reais Números racionais e irracionais.", "description" : "Ordem e valor absoluto."}, {"name":"Funções reais de variável real", "description" : "Generalidades sobre funções. Funções polinomiais e racionais. Funções trigonométricas. Função exponencial e logarítmica."}, {"name":"Limite", "description" : "Definição e propriedades de limites de uma função.Continuidade de funções."}, {"name":"Derivada", "description" : "Interpretação geométrica. Regras de derivação. Derivadas de ordem superior."}, {"name":"Estudo global de uma função", "description" : "Monotonia e extremos relativos. Concavidade e pontos de inflexão. Assíntotas. Gráficos."}, {"name":"Integração", "description" : "Primitiva imediata. Primitivação por substituição e por partes. Integral definido, teorema fundamental do cálculo.  Aplicações da integração (áreas de figuras planas)."}
+        ],
+        "name": "Matemática I",
+        "semester": 1,
+        "curricularYear": 1,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-1"
+    },
+    {
+        "teacher" : ["João Pedro Leal Abalada De Matos Carvalho", "Sergio Pedro Mestre Ferreira"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta unidade curricular visa apresentar aos estudantes os conceitos básicos conducentes à compreensão de Unidades Curriculares mais avançadas, nomeadamente no domínio da arquitetura de computadores. Tem ainda como objetivo potenciar o desenvolvimento do racíonio lógico.",
+        "programa" : [
+            {"name":"Códigos numéricos e Sistemas de Numeração", "description" : ""}, {"name":"Circuitos Lógicos Básicos", "description" : ""}, {"name":"Álgebra de Boole", "description" : ""}, {"name":"Funções Lógicas", "description" : ""}, {"name":"Circuitos Combinatórios Básicos", "description" : ""}, {"name":"Circuitos Digitais com Memória", "description" : ""}, {"name":"Síntese de Circuitos Sequênciais Elementares", "description" : ""}
+        ],
+        "name": "Sistemas Digitais",
+        "semester": 1,
+        "curricularYear": 1,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-7"
+    },
+    {
+        "teacher" : ["Maria José De Almeida E Silva"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Na sequência da Matemática Discreta, a Álgebra Linear é uma disciplina do 2ºsemestre do curso e estuda os espaços vectoriais finitamente gerados.sobre um corpo com comparticular incidência nos corpos primos Z p e o corpo dos reais O estudo dos espaços vectoriais confere aos estudantes competência para analisar problemas, equacioná-los e definir estratégias diversificadas de resolução. As aplicações lineares conduzem ao conceito de matriz que aparece como ferramenta de cálculo no estudo dos espaços vectoriais. O aluno adquire algumas técnicas de cálculo matricial e confere ao conjunto das matrizes finitas a estrutura de espaço vectorial. O aluno tem a oportunidade de estabelecer um isomorfismo entre espaços vectoriais de matrizes e o espaço vectorial de aplicações lineares o que lhe permitirá selecionar, na resolução de problemas, o espaço onde trabalhar tendo em atenção a especificidade do problema em causa.",
+        "programa" : [
+            {"name":"Estruturas algébricas", "description" : "grupos comutativos, aneis e corpos. Os corpos Z p, p primo."}, {"name":"Espaços vectoriais finitamente gerador. Subespaços vectoriais", "description" : ""}, {"name":"Sistemas de vectores equivalentes e dependência linear.", "description" : ""}, {"name":"Teorema de Steinitz e suas consequências.", "description" : ""}, {"name":"Aplicações lineares. Isomorfismos", "description" : ""}, {"name":"Matrizes sobre um corpo. Espaços vectoriais de matrizes .Produto de Matrizes", "description" : ""}, {"name":"Sistemas de Equações lineares", "description" : "Estudo e resolução de equações vectoriais lineares. Representação de subespaços vectoriais através de sistemas de equações lineares"}, {"name":"Determinantes: principais propriedades dos determinantes.", "description" : "Teorema de La Place"}, {"name":"Valores e vectores próprios", "description" : ""}
+        ],
+        "name": "Álgebra Linear",
+        "semester": 2,
+        "curricularYear": 1,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-2091"
+    },
+    {
+        "teacher" : ["Pedro Hugo De Queirós Alves", "Duarte Nuno Donas Botto Neves"
+
+        ],
+        "project" : "Rock in DEISI",
+        "apresentacao" : "1. Estruturas algébricas: grupos comutativos, aneis e corpos. Os corpos Z p, p primo. 2. Espaços vectoriais finitamente gerador. Subespaços vectoriais . 3. Sistemas de vectores equivalentes e dependência linear. 4. Teorema de Steinitz e suas consequências. 5. Aplicações lineares. Isomorfismos 6. Matrizes sobre um corpo. Espaços vectoriais de matrizes .Produto de Matrizes 7. Sistemas de Equações lineares: Estudo e resolução de equações vectoriais lineares. Representação de subespaços vectoriais através de sistemas de equações lineares 8. Determinantes: principais propriedades dos determinantes . Teorema de La Place 9. Valores e vectores próprios.",
+        "programa" : [
+            {"name":"Funções recursivas", "description" : "algoritmos recursivos tipos de dados complexos eficiência e optimização (algorítmica e não-algorítmica)"}, {"name":"Complexidade de algoritmos algoritmos de pesquisa algoritmos de ordenação", "description" : "bubble sort, selection sort, merge sort, quick sort tipos de dados abstractos – pilhas e filas listas ligadas árvores binárias, árvores ordenadas, árvores AVL hashtables"}
+        ],
+        "name": "Algoritmia e Estruturas de Dados",
+        "semester": 2,
+        "curricularYear": 1,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-13397"
+    },
+    {
+        "teacher" : ["Daniel Filipe Sobral Fernandes", "Sergio Pedro Mestre Ferreira"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta unidade curricular (UC) introduz conceitos de circuitos lógicos combinatórios e sequenciais. Os alunos aprendem a construir uma máquina sequencial e posteriormente um microprocessador. Como transformar uma operação numa instrução que possa ser interpretada e executada por um processador é um dos objetivos principais desta UC.",
+        "programa" : [
+            {"name":"Aulas Teóricas Circuitos digitais MSI", "description" : "Portas Lógicas, registos, contadores, memórias, multiplexers e descodificadores. Simulação."}, {"name":"Arquitetura de um Microprocessador (CPU) genérico.", "description" : "Componentes básicos: ALU, Registos e Barramentos. Instruções e Microinstruções Memórias de Programa e Dados. Fluxo de informação num CPU: Operações Fetch e Execution Estudo de um Microcontrolador comercial de baixo custo. Ambiente de desenvolvimento, programação, simulação e teste."}, {"name":"Aulas Práticas", "description" : "Componentes digitais típicos Simulação de componentes básicos da arquitetura interna de um CPU genérico Projeto simples com um microcontrolador comercial económico"}
+        ],
+        "name": "Arquitetura de Computadores",
+        "semester": 2,
+        "curricularYear": 1,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-5857"
+    },
+    {
+        "teacher" : ["Diogo Soares Pereira Gil Morais"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta unidade curricular (UC) inscreve-se num contexto onde têm sido elencadas necessidades de adaptação dos especialistas em informática ao contexto das organizações, nomeadamente no que às denominadas soft skills diz respeito. Assim, pretende-se que os alunos desenvolvam conhecimentos ao nível das ferramentas básicas de empregabilidade (ex. Currículo, redes sociais e networking, marketing pessoal), gestão das emoções, gestão de tempo (ex. trabalho remoto), trabalho em equipa e liderança, comunicação e desenvolvimento de competências comportamentais e autoconhecimento. Por outro lado, é objetivo desta UC o desenvolvimento de um plano individual de desenvolvimento pessoal, bem como de aptidões que permitam aos alunos destingir entre factos e opiniões, conhecimento científico e senso comum. Sendo uma UC de índole prática, pretende-se que os conhecimentos sejam operacionalizáveis e tendentes ao desenvolvimento de competências transferíveis do plano académico para a domínio profissional.",
+        "programa" : [
+            {"name":"Marketing Pessoal", "description" : "CV; Portefólio; Apresentação pessoal e contextos de entrevista; Apresentação em público e ferramentas de suporte; Redes sociais e Networking"}, {"name":" Factos Vs Opiniões", "description" : ""}, {"name":"Gestão de tempo", "description" : "Trabalho remoto e comunicação mediada; Work-life balance."}, {"name":" As tecnologias no trabalho", "description" : "oportunidades e ameaças."}, {"name":" Trabalho em equipa", "description" : "Comunicação; Personal and Social Skills development"}, {"name":" Percursos de carreira", "description" : ""}, {"name":"Critical thinking and problem solving", "description" : ""}
+],
+        "name": "Competências Comportamentais",
+        "semester": 2,
+        "curricularYear": 1,
+        "ects": 4,
+        "curricularIUnitReadableCode": "ULHT260-17267"
+    },
+    {
+        "teacher" : ["Pedro Arroz Correia Bonifácio Serra", "Daniel Tomás De Maia Mozart Silveira"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta unidade curricular oferece uma extensa exploração da programação procedural usando a linguagem de programação C, abrangendo tópicos fundamentais e avançados. Os alunos obterão uma compreensão abrangente da história da programação C e dos seus benefícios, bem como aprenderão a criar e executar programas simples em C. O currículo concentra-se em conceitos essenciais, incluindo tipos de dados, variáveis, estruturas de controlo, funções e ponteiros, com oportunidades de experiência prática para reforçar o conhecimento. A unidade curricular também aborda tópicos avançados, como manipulação de ficheiros, alocação dinâmica de memória e estruturas de dados como listas e filas. Através de projetos de programação, os alunos desenvolverão experiência prática, com ênfase particular em obter uma compreensão completa da organização e operação da memória do computador como um recurso. No final do curso, os alunos serão capazes de criar programas eficientes que fazem uso eficaz da memória.",
+        "programa" : [
+                {"name":"Introdução", "description" : "Visão geral, programação C, história, benefícios, configuração do ambiente, programa simples"}, {"name":"Sintaxe Básica", "description" : "Definições, tipos de dados, operadores, entrada/saída, estruturas de controlo"}, {"name":"Estruturas de controle avançadas", "description" : "Switch, break/continue, goto"}, {"name":"Funções", "description" : "definição/invocação, argumentos/valores de retorno, recursão"}, {"name":"Matrizes e Strings", "description" : "Definições, vectores de caracteres, strings, funções, matrizes 2D"}, {"name":"Ponteiros", "description" : "Definições, aritmética, pilha/heap, alocação dinâmica de memória"}, {"name":"Ponteiros Avançados", "description" : "Ponteiros para ponteiros/funções"}, {"name":"Estruturas e Uniões", "description" : "Definições, estruturas aninhadas, uniões"}, {"name":"Entrada/saída de arquivo", "description" : "visão geral, abertura/leitura/gravação de ficheiros, entrada/saída binária"}, {"name":"Diretivas e Macros do Pré-processador", "description" : "Definições, #define, #ifdef, #undef, macros com parâmetros"}, {"name":"Operadores bit a bit", "description" : "Definições, operadores bit a bit AND/OR/XOR/NOT/shift"}, {"name":"Listas Ligadas", "description" : "Definições, criação/manipulação, exemplos, pilhas/filas"}
+        ],
+        "name": "Linguagens de Programação I",
+        "semester": 2,
+        "curricularYear": 1,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-498"
+    },
+    {
+        "teacher" : ["Andre Vieira Vassalo Da Fonseca", "Sofia Marta Lima Naique"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Geométria analítica e calculo diferencial e integral para funções reais de várias variáveis reais.",
+        "programa" : [{"name":"Vectores e geometria do espaço", "description" : "1.1 Coordenadas cartesianas tridimensionais. 1.2 Vectores, produto escalar. 1.3 Rectas e planos. 1.4 Superfícies cilíndricas e quádricas. 1.5 Noções topologicas"}, {"name":"Funções vectoriais de variável real", "description" : "2.1 Funções vectoriais e curvas no espaço. 2.2 Limites e continuidade. Diferenciabilidade, vector tangente a uma curva. 2.3 Integração, comprimento de uma curva."}, {"name":"Funções de várias variáveis", "description" : "3.1 Dominios e curvas de nível. 3.2 Limites e continuidade. 3.3 Derivadas parciais, derivadas de ordem superior. 3.4 Diferenciabilidade, planos tangentes e aproximações polinómiais. 3.5 Derivada direccional, vector gradiente e sua interpretação geométrica. 3.6 Matriz Hessiana, extremos locais e pontos de sela."}, {"name":"4. Integrais múltiplos ", "description" : "4.1 Integrais duplos. 4.2 Coordenadas polares e mudança de variáveis em integrais duplos. 4.3 Integrais triplos. 4.4 Coordenadas cilíndricas e esféricas. Mudança de variáveis em integrais triplos."}
+],
+        "name": "Matemática II",
+        "semester": 2,
+        "curricularYear": 1,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-505"
+    },
+    {
+        "teacher" : ["Pedro Arroz Correia Bonifácio Serra", "Daniel Filipe Sobral Fernandes"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta unidade curricular vem completar os conhecimentos adquiridos anteriormente nas UCs de Sistemas Digitais e Arquitectura de Computadores, abordando temas mais actuais e conceitos de mais alto nível. A compreensão destes conceitos avançados de arquitectura de computadores faz com que os alunos tomem consciencia das limitações e possibilidades do hardware. Consequentemente poderão criar programas mais eficientes, capazes de tirar partido das capacidades do hardware e que tenham em conta as eventuais limitações deste.",
+        "programa" : [
+            {"name":"Introdução", "description" : ""}, {"name":"O processador Principais módulos funcionais Condutas e riscos Exceções Paralelismo ao nível da instrução", "description" : ""}, {"name":"Hierarquia de memória Dispositivos e tecnologia de armazenamento", "description" : "disco magnético, memória flash Memórias cache Memória virtual Confiabilidade na hierarquia de memória"}, {"name":"Paralelismo", "description" : "coerência entre caches, RAID"}, {"name":"Arquiteturas paralelas", "description" : "Limites de frequência, dissipação de energia e memória. Paralelismo e limites ao aumento de desempenho SIMD e processadores vetoriais Multithreading em hardware Arquiteturas de multiprocessador, aglomerados e computação em grelha. GPUs Medição de desempenho"}, {"name":"Virtualização", "description" : "Origens e definição do conceito de máquina virtual. Conceito de hipervisor. Variantes de implementação. Virtualização de sistema: processador, memória, periféricos (E/S) Exemplos de plataformas"}
+],
+        "name": "Arquiteturas Avançadas de Computadores",
+        "semester": 1,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-13398"
+    },
+    {
+        "teacher" : ["Rui Ribeiro", "João Carlos Palmela Pinheiro Caldeira"
+
+        ],
+        "project" : "",
+        "apresentacao" : "Esta unidade curricular tem por objetivo apresentar a importância da Gestão de Dados no seio de uma empresa, de forma a garantir quer a operação diária de negócio, bem como o apoio à decisão estratégica. Nesta unidade reforçar-se-á o enquadramento de estruturação e metodologias de criação das bases de dados.",
+        "programa" : [
+            {"name":"Introdução ao Modelo de relacionamento entre entidades", "description" : "modelo relacional"}, {"name":" Refinamento de esquema", "description" : "Conceito de normalização e transações Arquitetura de SGBD e algum SQL Avançado"}, {"name":"Componente Prática", "description" : "Introdução à linguagem SQL; Instruções: DDL, DML (DQL) e DCL Operações: WHERE, ORDER BY, GROUP BY; Conceito avançados em SQL: Controlo de erros Operadores Relacionais: União, intersecção e Subtracção Produto Cartesiano (externo) Queries complexos (filtro com valores agregados) e sub-queries Set DDL; Instrução CREATE; Tipos de dados; Nulidade; Instruções ALTER e DROP INDICES e VIEWS Controlo de erros: estrutura TRY-CATCH Procedimentos (SP) e Triggers Operações com tabelas: Cursores"}
+],
+        "name": "Bases de Dados",
+        "semester": 1,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-1792"
+    },
+    {
+        "teacher" : ["Pedro Hugo De Queirós Alves", "Duarte Nuno Donas Botto Neves"
+
+        ],
+        "project" : "DEISI Chess",
+        "apresentacao" : "Esta UC é o culminar de um caminho iniciado em Fundamentos de Programação e aprofundado em Algoritmia e Estruturas de Dados, solidificando os conhecimentos de programação. Com um foco no desenvolvimento e manutenção de programas de elevada complexidade, o paradigma imperativo deixa de ser suficiente e são abordados os paradigmas orientado a objectos e funcional. São igualmente abordados conceitos adjacentes à fase de implementação, como o controlo de versões, os testes unitários e funcionais, a cobertura de código e outras métricas de qualidade. Esta é uma UC fundamental na formação de qualquer profissional da área de Informática, pois fornece um conjunto de conhecimentos e ferramentas que serão essenciais nos projectos empresariais em que estes alunos virão a estar inseridos.",
+        "programa" : [
+            {"name":"Paradigmas de programação Imperativo, funcional, orientado a objetos", "description" : "Conceitos de programação por objectos Entidades, Atributos, Acções Classe vs Objecto, Principio do encapsulamento Herança, polimorfismo, parametrização por herança, composição UML Diagramas de classes Java orientado a objectos Classes, objectos, variáveis Construtores, métodos Visibilidade, Exceptions"}, {"name":"Estruturas de dados", "description" : "Arrays, Lists, Maps Herança, classes abstractas Input/Output"}, {"name":"Testes unitários JUnit", "description" : ""}, {"name":"Controlo de versões", "description" : "Git, Github Padrões de desenho Factory, Singleton, Observer/Observable, Composite"}, {"name":"Conceitos de programação funcional em Kotlin", "description" : "Funções puras, lambdas, funções de primeira ordem, iteração interna, operações com listas"}, {"name":"Boas práticas de programação multi-paradigma", "description" : ""}
+],
+        "name": "Linguagens de Programação II",
+        "semester": 1,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-898"
+    },
+    {
+        "teacher" : [ "Sofia Marta Lima Naique"
+
+        ],
+        "project" : "",
+        "apresentacao" : "A disciplina de Probabilidades e Estatística tem como objetivo fundamental dar ao estudante conceitos fundamentais da teoria da probabilidade e técnicas de estatística descritiva e inferência estatística, essenciais para o estudo de Engenharia.",
+        "programa" : [
+            {"name":"Estatística Descritiva", "description" : "Tabelas de frequência; Representação Gráfica; Cálculo de medidas descritivas de localização e dispersão"}, {"name":"Regressão Linear", "description" : "Estimar os parâmentros do modelo; Calcular e compreender o coeficiente de determinação"}, {"name":"Teoria das Probabilidades", "description" : "Experiência aleatória: Espaço amostral; Acontecimentos; Álgebra de acontecimentos: Definição, Propriedades da Probabilidade; Axiomática Kolmogorov; Probabilidade Condicionada: Independência; Teorema de Bayes"}, {"name":"Variáveis aleatórias discretas e continuas", "description" : "Função de probabilidade, Função densidade de probabilidade e Função distribuição; Parâmetros de variáveis aleatórias: Valor esperado, Variância e Desvio padrão"}, {"name":"Distribuições discretas", "description" : "Bernoulli, Binomial e Poisson"}, {"name":"Distribuições contínuas", "description" : "Normal e Exponencial"}, {"name":"Inferência Estatística", "description" : "Amostra e Amostra Aleatória. Média amostral"}, {"name":"Estimação", "description" : "Intervalos de Confiança para Valor Esperado; Testes de Hipóteses para Valor Esperado."}
+],
+        "name": "Probabilidades e Estatística",
+        "semester": 1,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-620"
+    },
+    {
+        "teacher" : ["João Pedro Gonçalves Crespo Craveiro", "Daniel Tomás De Maia Mozart Silveira"
+
+        ],
+        "project" : "",
+        "apresentacao" : "O objectivo desta UC é o de apresentar os princípios fundamentais dos Sistemas Operativos, de forma a permitir uma compreensão detalhada da sua arquitectura e funcionamento, dando aos alunos os conhecimentos e capacidades para utilizar, configurar e optimizar este componente fundamental dos sistemas informáticos.",
+        "programa" : [
+            {"name":"Introdução a Sistemas Operativos", "description" : ""}, {"name":"Processos", "description" : "Threads e concorrência Escalonamento do CPU Sincronização de processos Deadlocks."}, {"name":" Gestão de Memória", "description" : ""}, {"name":"Gestão de armazenamento em massa Sistema de ficheiros", "description" : ""}, {"name":"Virtualizacao", "description" : ""}
+],
+        "name": "Sistemas Operativos",
+        "semester": 1,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-6305"
+    },
+    {
+        "teacher" : [],
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Engenharia de Requisitos e Testes",
+        "semester": 2,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-22512"
+    },
+    {
+        "teacher" : [],
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Processamento de Imagem",
+        "semester": 2,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-19082"
+    },
+    {
+        "teacher" : [],
+
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Programação Web",
+        "semester": 2,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-11195"
+    },
+    {
+        "teacher" : [],
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Redes de Computadores",
+        "semester": 2,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-1793"
+    },
+    {
+        "teacher" : [],
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Sistemas de Suporte à Decisão",
+        "semester": 2,
+        "curricularYear": 2,
+        "ects": 6,
+        "curricularIUnitReadableCode": "ULHT260-7303"
+    },
+    {
+        "teacher" : [],
+
+
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Trabalho Final de Curso",
+        "semester": "1",
+        "curricularYear": 3,
+        "ects": 20,
+        "curricularIUnitReadableCode": "ULHT260-5140"
+    },
+    {
+        "teacher" : [],
+
+
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Computação Distribuída",
+        "semester": 1,
+        "curricularYear": 3,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-7348"
+    },
+    {
+        "teacher" : [],
+
+
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Data Science",
+        "semester": 1,
+        "curricularYear": 3,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-22513"
+    },
+    {
+        "teacher" : [],
+
+
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Engenharia de Software",
+        "semester": 1,
+        "curricularYear": 3,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-672"
+    },
+    {
+        "teacher" : [],
+
+
+        "project" : "",
+        "apresentacao" : "apresentacao",
+        "programa" : [],
+
+        "name": "Interação Humano-Computador",
+        "semester": 1,
+        "curricularYear": 3,
+        "ects": 5,
+        "curricularIUnitReadableCode": "ULHT260-1953"
+    }
+]

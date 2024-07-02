@@ -1,0 +1,106 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    --color-primary: orange;
+    font-family: "Roboto", sans-serif;
+}
+
+.back-button {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    width: 70px;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button :hover {
+    color : var(--color-primary);
+}
+
+
+.backAndWeather{
+    display : flex;
+    flex-direction: column;
+}
+
+.weather_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.citySelectorContainer{
+    padding: 16px 16px 0 16px;
+}
+
+.previsoes{
+    display: flex;
+    align-content: flex-start;
+    padding : 16px;
+    gap: 16px;
+}
+
+.date{
+    text-weight: bold;
+}
+
+
+
+.proximosDias > * {
+
+
+}
+
+.previsao{
+    align-content: center;
+
+}
+
+.previsao > * {
+    justify-content: center;
+}
+.previsoes{
+    padding: 0 16px 016px;
+}
+.previsoes img {
+    max-width: 100px;
+
+}
+
+.cincoDias_container{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+@media (max-width: 750px) {
+    .previsoes{
+        flex-direction: column;
+    }
+
+    .cincoDias_container{
+        justify-content: center;
+    }
+
+}
+

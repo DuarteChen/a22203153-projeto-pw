@@ -1,0 +1,13 @@
+{
+    "Matemática e Física": ["Álgebra Linear", "Fundamentos de Física", "Matemática Discreta", "Matemática I", "Matemática II", "Probabilidades e Estatística"],
+    "Arquiteturas e Sistemas Operativos": ["Arquitetura de Computadores", "Arquiteturas Avançadas de Computadores", "Computação Distribuída", "Sistemas Digitais", "Sistemas Operativos"],
+    "Redes e Telecomunicações": ["Redes de Computadores", "Segurança Informática"],
+    "Programação e Engenharia de SW": ["Algoritmia e Estruturas de Dados", "Computação Móvel", "Engenharia de Software", "Fundamentos de Programação", "Linguagens de Programação I", "Linguagens de Programação II", "Programação Web", "Sistemas de Informação na Nuvem"],
+    "Sistemas de Informação": ["Bases de Dados", "Engenharia de Requisitos e Testes"],
+    "Interação Humano-Máquina": ["Interação Humano-Computador"],
+    "Dados e Inteligência Artificial": ["Data Science", "Inteligência Artificial", "Processamento de Imagem", "Sistemas de Suporte à Decisão"],
+    "Gestão e Softskills": ["Competências Comportamentais"],
+    "Genérica": ["Trabalho Final de Curso"]
+}
+
+

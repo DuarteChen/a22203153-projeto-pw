@@ -1,0 +1,26 @@
+[
+    {
+    "name": "Kotlin",
+    "description": "Ciclos, funções, arrays, arrays 2D, leitura do teclado, escrita no ecrã."
+    },
+    {
+    "name": "Algoritmos de ordenação e pesquisa",
+    "description": "Estruturas de dados otimizadas para pesquisa como árvores e hashtables."
+    },
+    {
+    "name": "Deteção de bottlenecks",
+    "description": "Utilização de otimizações não-algorítmicas como buffering."
+    },
+    {
+    "name": "Tecnologias utilizadas",
+    "description": "Java, IntelliJ, JUnit, ChatGPT."
+    },
+    {
+    "name": "Diagramas UML",
+    "description": "Programação orientada a objetos de acordo com o teorema do encapsulamento."
+    },
+    {
+    "name": "Tecnologias usadas",
+    "description": "Java e Kotlin, testes em JUnit 5 e criação de um repositório Git no GitHub."
+    }
+]
