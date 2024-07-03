@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'meteo',
+    'bands',
     # Django Allauth apps
     'allauth',
     'allauth.account',
@@ -134,6 +135,13 @@ DATABASES = {
             },
     }
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'duartechen@gmail.com'
+EMAIL_HOST_PASSWORD = 'qdwe fjjs ictn extp'
 
 
 # Password validation

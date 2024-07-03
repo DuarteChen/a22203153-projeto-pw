@@ -1,0 +1,89 @@
+{
+  "band_name": "The Beatles",
+  "albums": [
+    {
+      "album_name": "Please Please Me",
+      "album_release_date": 1963,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Love Me Do",
+          "release_date": 1962,
+          "writer": {
+            "name": "John Lennon & Paul McCartney"
+          }
+        },
+        {
+          "music_name": "I Saw Her Standing There",
+          "release_date": 1963,
+          "writer": {
+            "name": "Paul McCartney"
+          }
+        },
+        {
+          "music_name": "Please Please Me",
+          "release_date": 1963,
+          "writer": {
+            "name": "John Lennon"
+          }
+        }
+      ]
+    },
+    {
+      "album_name": "Rubber Soul",
+      "album_release_date": 1965,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Drive My Car",
+          "release_date": 1965,
+          "writer": {
+            "name": "John Lennon & Paul McCartney"
+          }
+        },
+        {
+          "music_name": "Norwegian Wood (This Bird Has Flown)",
+          "release_date": 1965,
+          "writer": {
+            "name": "John Lennon"
+          }
+        },
+        {
+          "music_name": "In My Life",
+          "release_date": 1965,
+          "writer": {
+            "name": "John Lennon"
+          }
+        }
+      ]
+    },
+    {
+      "album_name": "Abbey Road",
+      "album_release_date": 1969,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Come Together",
+          "release_date": 1969,
+          "writer": {
+            "name": "John Lennon"
+          }
+        },
+        {
+          "music_name": "Something",
+          "release_date": 1969,
+          "writer": {
+            "name": "George Harrison"
+          }
+        },
+        {
+          "music_name": "Carry That Weight",
+          "release_date": 1969,
+          "writer": {
+            "name": "John Lennon & Paul McCartney"
+          }
+        }
+      ]
+    }
+  ]
+}

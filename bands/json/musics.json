@@ -1,0 +1,89 @@
+{
+  "band_name": "Queen",
+  "albums": [
+    {
+      "album_name": "Queen",
+      "album_release_date": 1973,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Keep Yourself Alive",
+          "release_date": 1973,
+          "writer": {
+            "name": "Brian May"
+          }
+        },
+        {
+          "music_name": "Doing All Right",
+          "release_date": 1973,
+          "writer": {
+            "name": "Roger Taylor"
+          }
+        },
+        {
+          "music_name": "Great King Rat",
+          "release_date": 1973,
+          "writer": {
+            "name": "Freddie Mercury"
+          }
+        }
+      ]
+    },
+    {
+      "album_name": "A Night at the Opera",
+      "album_release_date": 1975,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Bohemian Rhapsody",
+          "release_date": 1975,
+          "writer": {
+            "name": "Freddie Mercury"
+          }
+        },
+        {
+          "music_name": "You're My Best Friend",
+          "release_date": 1975,
+          "writer": {
+            "name": "John Deacon"
+          }
+        },
+        {
+          "music_name": "I'm in Love with My Car",
+          "release_date": 1975,
+          "writer": {
+            "name": "Roger Taylor"
+          }
+        }
+      ]
+    },
+    {
+      "album_name": "The Game",
+      "album_release_date": 1980,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Another One Bites the Dust",
+          "release_date": 1980,
+          "writer": {
+            "name": "John Deacon"
+          }
+        },
+        {
+          "music_name": "Crazy Little Thing Called Love",
+          "release_date": 1980,
+          "writer": {
+            "name": "Freddie Mercury"
+          }
+        },
+        {
+          "music_name": "Don't Stop Me Now",
+          "release_date": 1979,
+          "writer": {
+            "name": "Freddie Mercury"
+          }
+        }
+      ]
+    }
+  ]
+}

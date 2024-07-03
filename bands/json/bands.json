@@ -1,0 +1,71 @@
+[
+  {
+    "band_name": "The Beatles",
+    "start_date": 1960,
+    "music_type": 1,
+    "members": [
+      {
+        "name": "John Lennon",
+        "birth_date": 1940
+      },
+      {
+        "name": "Paul McCartney",
+        "birth_date": 1942
+      },
+      {
+        "name": "George Harrison",
+        "birth_date": 1943
+      },
+      {
+        "name": "Ringo Starr",
+        "birth_date": 1940
+      }
+    ]
+  },
+  {
+    "band_name": "Led Zeppelin",
+    "start_date": 1968,
+    "music_type": 2,
+    "members": [
+      {
+        "name": "Jimmy Page",
+        "birth_date": 1944
+      },
+      {
+        "name": "Robert Plant",
+        "birth_date": 1948
+      },
+      {
+        "name": "John Bonham",
+        "birth_date": 1948
+      },
+      {
+        "name": "John Paul Jones",
+        "birth_date": 1946
+      }
+    ]
+  },
+  {
+  "band_name": "Queen",
+  "start_date": 1970,
+  "music_type": 3,
+  "members": [
+    {
+      "name": "Freddie Mercury",
+      "birth_date": 1946
+    },
+    {
+      "name": "Brian May",
+      "birth_date": 1947
+    },
+    {
+      "name": "Roger Taylor",
+      "birth_date": 1949
+    },
+    {
+      "name": "John Deacon",
+      "birth_date": 1951
+    }
+  ]
+  }
+]

@@ -8,7 +8,11 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 from django.contrib.auth.models import User
 from .forms import *
+from django.core.mail import send_mail
 
+'''
+Função geral para rederização de todas as páginas ------------------------------
+'''
 def contextFun(request):
     username = request.user.username if request.user.is_authenticated else 'Guest'
 
@@ -19,7 +23,9 @@ def contextFun(request):
 
     return context
 
-
+'''
+Login views --------------------------------------------------------------------
+'''
 def login_view(request):
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
@@ -79,16 +85,11 @@ def registo_view(request):
 
     return render(request, 'auth/registo.html', context)
 
-
-
-def aboutMe_view(request):
-
-    context = contextFun(request)
-
-    return render(request, "portfolio/aboutme.html", context)
+'''
+Website views ------------------------------------------------------------------
+'''
 
 def portfolio_view(request):
-    username = request.user.username if request.user.is_authenticated else 'Guest'
     curso = Course.objects.get(name="Engenharia Informática")
 
     context = contextFun(request)
@@ -96,6 +97,47 @@ def portfolio_view(request):
     context['curso'] = curso
 
     return render(request, "portfolio/portfolio.html", context)
+
+def contacto_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            text = form.cleaned_data['text']
+
+            # Sending the email
+            send_mail(
+                subject=f'{name}, confirmação de pedido de contacto',
+                message= f'{name}, obrigado pelo contacto. Falaremos em breve.',
+                from_email='duartechen@gmail.com',
+                recipient_list=[email],
+                fail_silently=False,
+            )
+
+            send_mail(
+                subject=f'Pedido de contacto de {name}',
+                message= f'{email} - {text}',
+                from_email='duartechen@gmail.com',
+                recipient_list=['duartechen@gmail.com'],
+                fail_silently=False,
+            )
+
+            return redirect('portfolio:portfolio')
+    else:
+        form = ContactForm()
+
+    context = contextFun(request)
+    context['form'] = form
+
+    return render(request, "portfolio/contacto.html", context)
+
+
+def aboutMe_view(request):
+
+    context = contextFun(request)
+
+    return render(request, "portfolio/aboutme.html", context)
 
 def subject_view(request, subjectId):
     username = request.user.username if request.user.is_authenticated else 'Guest'

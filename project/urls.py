@@ -21,6 +21,8 @@ urlpatterns = [
 
     path('meteo/', include('meteo.urls')),
 
+    path('bands/', include('bands.urls')),
+
     path('', include('portfolio.urls'), name='portfolio'),
 
     path('accounts/', include('allauth.urls')),

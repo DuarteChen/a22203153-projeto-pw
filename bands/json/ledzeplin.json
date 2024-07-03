@@ -1,0 +1,89 @@
+{
+  "band_name": "Led Zeppelin",
+  "albums": [
+    {
+      "album_name": "Led Zeppelin",
+      "album_release_date": 1969,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Good Times Bad Times",
+          "release_date": 1969,
+          "writer": {
+            "name": "John Bonham"
+          }
+        },
+        {
+          "music_name": "Dazed and Confused",
+          "release_date": 1969,
+          "writer": {
+            "name": "Jimmy Page"
+          }
+        },
+        {
+          "music_name": "Communication Breakdown",
+          "release_date": 1969,
+          "writer": {
+            "name": "John Bonham"
+          }
+        }
+      ]
+    },
+    {
+      "album_name": "Led Zeppelin IV",
+      "album_release_date": 1971,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Black Dog",
+          "release_date": 1971,
+          "writer": {
+            "name": "John Bonham"
+          }
+        },
+        {
+          "music_name": "Stairway to Heaven",
+          "release_date": 1971,
+          "writer": {
+            "name": "Jimmy Page"
+          }
+        },
+        {
+          "music_name": "Rock and Roll",
+          "release_date": 1971,
+          "writer": {
+            "name": "John Bonham"
+          }
+        }
+      ]
+    },
+    {
+      "album_name": "Physical Graffiti",
+      "album_release_date": 1975,
+      "album_image": "",
+      "musics": [
+        {
+          "music_name": "Kashmir",
+          "release_date": 1975,
+          "writer": {
+            "name": "Jimmy Page"
+          }
+        },
+        {
+          "music_name": "Houses of the Holy",
+          "release_date": 1975,
+          "writer": {
+            "name": "John Bonham"
+          }
+        },
+        {
+          "music_name": "The Ocean",
+          "release_date": 1975,
+          "writer": {
+            "name": "John Bonham"
+          }
+        }
+      ]
+    }
+  ]
+}

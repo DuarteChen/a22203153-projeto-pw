@@ -1,0 +1,25 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+<div class="login-wrapper">
+    <div class="login-container" id="contactBox">
+        <h2>Pedido de Contacto</h2>
+        <form method="post" action="{% url 'portfolio:contacto' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_email">Email</label>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                <label for="id_name">Nome</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="id_text">Mensagem</label>
+                {{ form.text }}
+            </div>
+            <button type="submit" id="loginButton">Enviar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

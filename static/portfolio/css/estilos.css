@@ -329,6 +329,93 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color = "black";
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.content .left,
+.content .right {
+    flex: 1;
+    padding: 10px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+h2.section-title {
+    color: #007a7a;
+    border-bottom: 2px solid #007a7a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skills, .interests, .experience {
+    margin-bottom: 20px;
+}
+
+.skills ul, .interests ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .interests li {
+    padding: 5px 0;
+}
+
+.experience ul {
+    padding-left: 20px;
+}
+
+.experience li {
+    margin-bottom: 10px;
+}
+
+.experience li span {
+    display: block;
+    font-weight: bold;
+}
+
+
+/*Formulário de contacto*/
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin:6px;
+}
+
+.form-group textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+#contactBox{
+   width:500px;
+}
+
+.form-control{
+    width: 100%;
+    max-width: 100%;
+    padding:10px;
+}
+
 
 @media (max-width: 900px) {
 
@@ -384,125 +471,17 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
          align-items: center;
      }
 
- #jumping {
-    margin : 16px 0;
-    width: 90%;
-    max-height: 400px;
-    aspect-ratio: 1;
-    height: auto;
+     #jumping {
+        margin : 16px 0;
+        width: 90%;
+        max-height: 400px;
+        aspect-ratio: 1;
+        height: auto;
+
+    }
+
 
 }
-
-
-}
-
-.login-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 64px);
-}
-
-.login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
-}
-
-.login-container input[type="text"],
-
-.login-container input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#loginButton {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: var(--color-primary);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#loginButton:hover {
-    background-color: var(--color-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.content {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px 0;
-        }
-
-        .content .left,
-        .content .right {
-            flex: 1;
-            padding: 10px;
-        }
-
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto;
-        }
-
-        .profile-image img {
-            width: 100%;
-            height: auto;
-        }
-
-        h2.section-title {
-            color: #007a7a;
-            border-bottom: 2px solid #007a7a;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .skills, .interests, .experience {
-            margin-bottom: 20px;
-        }
-
-        .skills ul, .interests ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills li, .interests li {
-            padding: 5px 0;
-        }
-
-        .experience ul {
-            padding-left: 20px;
-        }
-
-        .experience li {
-            margin-bottom: 10px;
-        }
-
-        .experience li span {
-            display: block;
-            font-weight: bold;
-        }
 
 
 
