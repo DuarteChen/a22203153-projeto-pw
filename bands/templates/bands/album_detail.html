@@ -1,0 +1,30 @@
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+{% block content %}
+<div class="welcome" id = "bands_welcome">
+    <div class="band_itemDetails">
+        <h1 class = "title">{{ album.album_name }}</h2>
+        <div class="band_description">
+            <div class = "band_detailsDescription">
+                <p>Release Date: {{ album.album_release_date }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "albumAdderButton">
+        <h2 class = "albumSubTitle">Musics</h2>
+        {% if user.is_authenticated and perms.bands.add_music %}
+            <a href="{% url 'bands:add_music' album.id %}">
+                <img id = "addNewAlbum" class="band_image" src="{% static 'bands/add_band.svg' %}" alt="Add Band">
+            </a>
+        {% endif %}
+    </div>
+
+    {% for music in album.musics.all %}
+    <div class="band_itemDetails musicDetailsList">
+        <a href="{% url 'bands:music_detail' music.id %}" class="albumTitle">{{ music.music_name }}</a>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

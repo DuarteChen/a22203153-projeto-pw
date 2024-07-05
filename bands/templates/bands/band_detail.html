@@ -1,0 +1,33 @@
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+{% block content %}
+<div class="welcome" id = "bands_welcome">
+    <div class="band_itemDetails">
+        <h1 class = "title">{{ band.band_name }}</h2>
+        <div class="band_description">
+            {% if band.band_image %}
+                <img class="band_image" src="{{ band.band_image.url }}" alt="{{ band.band_name }}">
+            {% endif %}
+            <div class = "band_detailsDescription">
+                <p>Start Date: {{ band.start_date }}</p>
+                <p>Music Type: {{ band.get_music_type_display }}</p>
+                <p class = "big_bandDescription">{{ band.description }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "albumAdderButton">
+        <h2 class = "albumSubTitle">Albums</h2>
+        {% if user.is_authenticated and perms.bands.add_album %}
+            <a href="{% url 'bands:add_album_form' band.id %}">
+                <img id = "addNewAlbum" class="band_image" src="{% static 'bands/add_band.svg' %}" alt="Add Band">
+            </a>
+        {% endif %}
+    </div>
+    {% for album in band.albums.all %}
+    <div class="band_itemDetails albumDetails">
+        <a href="{% url 'bands:album_detail' album.id %}" class="albumTitle">{{ album.album_name }}</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

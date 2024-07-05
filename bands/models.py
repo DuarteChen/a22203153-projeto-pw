@@ -3,6 +3,7 @@ from django.db import models
 class Band(models.Model):
     band_name = models.CharField(max_length=50)
     start_date = models.IntegerField()
+    description = models.TextField()
 
     ROCK = 1
     METAL = 2
@@ -43,6 +44,7 @@ class Music(models.Model):
     music_name = models.CharField(max_length=50)
     writer = models.ForeignKey(BandMember, on_delete=models.CASCADE, related_name='musics', null=True, blank=True)
     release_date = models.IntegerField()
+    lyrics = models.TextField()
 
     def __str__(self):
         return f'{self.music_name} - {self.release_date}'
@@ -51,9 +53,8 @@ class Music(models.Model):
 class Album(models.Model):
     album_name = models.CharField(max_length=50)
     album_release_date = models.IntegerField(blank=True)
-    album_image = models.ImageField(upload_to='albums/', blank=True)
     musics = models.ManyToManyField(Music, related_name='albums')
-    band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='albums')  # Added related_name
+    band = models.ForeignKey(Band, on_delete=models.CASCADE, related_name='albums')
 
     def __str__(self):
         return f'{self.album_name} - {self.album_release_date}'

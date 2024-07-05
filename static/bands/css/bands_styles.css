@@ -1,0 +1,179 @@
+.bandsList_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bandsInWebTitle{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.bandsList {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 10;
+    flex-wrap: wrap;
+
+    width: auto;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.band_item {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bandList_description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px;
+
+    align-content: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.band_description{
+    display: flex;
+
+    align-content: center;
+    margin: 16px 0 0;
+}
+
+.bandTitle{
+    text-align: center;
+}
+
+.band_itemDetails {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+
+    margin: 0 10px 10px 10px;
+
+    min-width: 300px;
+}
+
+.band_detailsDescription{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 16px;
+    gap: 10px;
+}
+
+.band_image {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.small_description{
+    text-align: center;
+}
+
+.big_bandDescription{
+    width: 100%;
+    max-width: 600px;
+}
+
+
+#bands_welcome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.albumDetails{
+    width: 300px;
+}
+
+.albumSubTitle{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.albumTitle{
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.albumAdderButton{
+    display: flex;
+    align-items:center;
+    gap: 10px
+}
+#addNewAlbum{
+
+    width: 20px;
+    height: 20px;
+}
+
+.centered-lyrics {
+    text-align: center;
+    white-space: pre-line; /* Preserve line breaks */
+    margin: 0 auto; /* Optional: center block element within its container */
+    width: 80%; /* Optional: adjust the width as needed */
+}
+
+@media (max-width: 900px) {
+    .band_description{
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .albumSubTitle{
+        font-size: 1.5rem;
+    }
+
+    .albumTitle{
+        font-size: 1.2rem;
+    }
+
+    .band_image {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .band_detailsDescription{
+        margin: 0;
+    }
+
+
+
+    #bandsInWebTitle{
+        margin-bottom: 16px;
+    }
+
+
+}
+
+

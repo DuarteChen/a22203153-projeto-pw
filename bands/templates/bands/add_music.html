@@ -1,0 +1,30 @@
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="login-wrapper">
+    <div class="login-container">
+        <h1>Add Music to Album</h1>
+        <form method="post" action="{% url 'bands:add_music' album_id=album_id %}">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="music_name">Music Name:</label>
+                <input type="text" id="music_name" name="music_name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="release_date">Release Date:</label>
+                <input type="text" id="release_date" name="release_date" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lyrics">Lyrics:</label>
+                {{ form.lyrics }}
+            </div>
+
+            <button type="submit" id ="loginButton">Add Music</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

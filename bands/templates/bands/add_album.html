@@ -1,0 +1,29 @@
+{% extends 'portfolio/layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="login-wrapper">
+    <div class="login-container">
+        <h1>Add a New Album</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="{{ form.album_name.id_for_label }}">Album Name</label>
+                {{ form.album_name }}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.album_release_date.id_for_label }}">Release Date</label>
+                {{ form.album_release_date }}
+            </div>
+
+            <div class="form-group">
+                {{ form.band.as_hidden }}
+            </div>
+
+            <button type="submit" id ="loginButton">Save</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
