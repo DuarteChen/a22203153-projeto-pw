@@ -22,12 +22,10 @@ function documentEvents(event) {
 
 let slideIndex = 1;
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }

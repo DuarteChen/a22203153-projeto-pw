@@ -15,7 +15,7 @@ urlpatterns = [
     path('user/', views.user_view, name="userView"),
     path('autenticacao/login/', views.user_view),
 
-    #path('subject/<int:subjectId>/', views.subject_view, name="subjectView"), #href="{% url 'subjectView' cadeira.id %}"
+    path('subject/<int:subjectId>/', views.subject_view, name="subjectView"), #href="{% url 'subjectView' cadeira.id %}"
 
 
 ]

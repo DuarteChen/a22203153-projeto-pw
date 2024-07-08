@@ -2,81 +2,80 @@
 
 {% block content %}
 
-<div class = "welcome">
+<div class="welcome" id="subjectView">
 
-    <h2>{{ subject.year }}º ano - {{ subject.semester }}º semestre</h2>
+    <div id="superParent">
+        <div class="allsubject_detailsArea">
 
-    <h2>Semester</h2>
-    <p>{{ subject.get_semester_display }}</p>
+            <p>({% if subject.scientificArea %}{{ subject.scientificArea.name }}{% else %}No scientific area assigned{% endif %})</p>
+            <div class="SubjectTitleContainer">
+                <h1 class="title" id="subject_Title">{{ subject.name }}</h1>
+                <div class="displayflexColumn">
+                    <p>{{ subject.year }}º ano</p>
+                    <p>{{ subject.semester }}º semestre</p>
+                </div>
+            </div>
 
-    <h2>Course</h2>
-        <p>{{ subject.course.name }}</p>
+            <div>
+                <h2 class="subjectSubtitle">Principais conceitos:</h2>
+                <ul>
+                    {% for concept in subject.programa.all %}
+                        <li>{{ concept.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
 
+            <div>
+                <h2 class="subjectSubtitle">Descrição:</h2>
+                <p>{{ subject.apresentacao }}</p>
+            </div>
 
-
-    <h1>{{ subject.name }}</h1>
-
-    <h2>Scientific Area</h2>
-    {% if subject.scientificArea %}
-        <p>{{ subject.scientificArea.name }}</p>
-    {% else %}
-        <p>No scientific area assigned.</p>
-    {% endif %}
-
-    <h2>Presentation</h2>
-    <p>{{ subject.apresentacao }}</p>
-
-
-    <h2>Teacher(s)</h2>
-    <ul>
-        {% for teacher in subject.teacher.all %}
-            <li>{{ teacher.name }}</li>
-        {% endfor %}
-    </ul>
-
-    <h2>Program Concepts</h2>
-    <ul>
-        {% for concept in subject.programa.all %}
-            <li>{{ concept.name }}</li>
-        {% endfor %}
-    </ul>
-
-
-
-    <h2>Project</h2>
-    {% if subject.project %}
-        <div>
-            <h3>{{ subject.project.name }}</h3>
-            {% if subject.project.projectImage %}
-                <img src="{{ subject.project.projectImage.url }}" alt="{{ subject.project.name }}">
-            {% endif %}
-            <p>{{ subject.project.description }}</p>
-            {% if subject.project.youtubeVideo %}
-                <p>Watch the video: <a href="{{ subject.project.youtubeVideo }}">{{ subject.project.youtubeVideo }}</a></p>
-            {% endif %}
-            {% if subject.project.gitHub %}
-                <p>GitHub: <a href="{{ subject.project.gitHub }}">{{ subject.project.gitHub }}</a></p>
-            {% endif %}
-            <h4>Applied Concepts:</h4>
-            <ul>
-                {% for concept in subject.project.conceitosAplicados.all %}
-                    <li>{{ concept.name }}</li>
-                {% endfor %}
-            </ul>
         </div>
-    {% else %}
-        <p>No project assigned.</p>
-    {% endif %}
 
+        <div id="subjectparentcontainer">
 
-    <h2>ECTS</h2>
-    <p>{{ subject.ects }}</p>
+            <div class="allsubject_details" id="Projectodetails">
+                <span class="title-container">
+                    <h2 class="subjectSubtitle">Projeto - </h2>
+                    {% if subject.project %}
+                        <h3 class="projectName">{{ subject.project.name }}</h3>
+                    </span>
+                    <div>
+                        {% if subject.project.projectImage %}
+                            <img src="{{ subject.project.projectImage.url }}" alt="{{ subject.project.name }}">
+                        {% endif %}
+                        <p>{{ subject.project.description }}</p>
+                        {% if subject.project.youtubeVideo %}
+                            <p>Watch the video: <a href="{{ subject.project.youtubeVideo }}">{{ subject.project.youtubeVideo }}</a></p>
+                        {% endif %}
+                        {% if subject.project.gitHub %}
+                            <p>GitHub: <a href="{{ subject.project.gitHub }}">{{ subject.project.gitHub }}</a></p>
+                        {% endif %}
+                        <h4>Applied Concepts:</h4>
+                        <ul>
+                            {% for concept in subject.project.conceitosAplicados.all %}
+                                <li>{{ concept.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% else %}
+                        <p>No project assigned.</p>
+                    {% endif %}
+            </div>
 
-    <h2>Grade</h2>
-    <p>{{ subject.nota }}</p>
+            <div class="allsubject_details" id="TeacherContainer">
+                <h2 class="subjectSubtitle">Docentes:</h2>
+                <ul>
+                    {% for teacher in subject.teacher.all %}
+                        <a href="{{ teacher.linkedinLink }}"><li>{{ teacher.name }}</li></a>
+                    {% endfor %}
+                </ul>
+            </div>
 
+        </div>
+
+    </div>
 
 </div>
-
 
 {% endblock %}

@@ -1,17 +1,13 @@
-.aboutMe{
-  background: #111111;
-  color: #fff;
+.aboutMe {
+    background: #111111;
+    color: #fff;
 }
 
-.aboutMe a{
-  color: #fff;
+.aboutMe a {
+    color: #fff;
 }
 
-.aboutMe{
-
-}
-
-.aboutMe_container{
+.aboutMe_container {
     display: flex;
     flex-direction: column;
 }
@@ -22,34 +18,140 @@
     border-radius: 4px;
 }
 
-.generalInfo{
+.generalInfo {
     display: flex;
 }
 
-.myDescriptions{
+.myDescriptions {
     display: flex;
     flex-direction: column;
     padding: 0px 16px;
-    max-width:500px;
-
+    max-width: 500px;
 }
 
-.myDescriptions_nome{
+.myDescriptions_nome {
     font-size: 4.5rem;
     font-weight: 800;
 }
-.descricao{
+
+.descricao {
     line-height: 1.2;
 }
-.timeline{
+
+.timeline {
     max-width: 1000px;
     width: auto;
-
     height: auto;
 }
 
-.aspiracao{
+.aspiracao {
     padding: 16px 0;
     font-weight: bold;
+}
+
+.allsubject_detailsArea{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
+    width: 100%;
+}
+
+.allsubject_details {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
+
+}
+
+#subjectView {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+
+.allsubject_details p {
+    line-height: 1.2;
+}
+
+.SubjectTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#subject_Title {
+    font-size: 2rem;
+}
+
+.subjectSubtitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.displayflexColumn {
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+}
+
+.displayflexColumn p {
+    text-align: right;
+}
+
+#subjectparentcontainer {
+    display: grid;
+    grid-template-row: project | docentes;
+    gap: 10px;
+    min-width: 100%;
+}
+
+#superParent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+    width: 80%;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subjectSubtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.projectName {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #666;
+}
+
+#Projectodetails {
+    grid-row: project;
+
+}
+
+#TeacherContainer {
+    grid-row: docentes;
+}
+
+#superParent p{
+    line-height: 1.2;
 }
 

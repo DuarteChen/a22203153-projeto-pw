@@ -143,7 +143,7 @@ def subject_view(request, subjectId):
     username = request.user.username if request.user.is_authenticated else 'Guest'
 
     context = contextFun(request)
-    contect['subject'] = Subject.objects.get(id=subjectId)
+    context['subject'] = Subject.objects.get(id=subjectId)
 
     return render(request, "portfolio/subject.html", context)
 

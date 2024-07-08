@@ -16,8 +16,8 @@
       </div>
       <p class="description">Sou estudante da Licenciatura em Engenharia Informática na Universidade Lusófona.</p>
       <div class="group-buttons">
-        <a href="#cursos" >Universidade</a>
         <a href="#aboutMe" class="button_enfatizado">Get to know MeByMe</a>
+        <a href="#cursos" >Universidade</a>
       </div>
     </div>
       <img class="welcome-thumbnail" src="{% static 'DuarteChen.png' %}" alt="Duarte Chen"/>
@@ -74,7 +74,7 @@
                         {% for cadeira in subjects %}
                             {% if cadeira.year|stringformat:"i" == year %}
                                 <li>
-                                    <a>{{ cadeira.name }}</a>
+                                    <a href="{% url 'portfolio:subjectView' cadeira.id %}">{{ cadeira.name }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
@@ -98,7 +98,7 @@
                             {% for cadeira in subjects %}
                                 {% if cadeira.year|stringformat:"i" == year %}
                                     <li>
-                                        <a>{{ cadeira.name }}</a>
+                                        <a href="{% url 'portfolio:subjectView' cadeira.id %}">{{ cadeira.name }}</a>
                                     </li>
                                 {% endif %}
                             {% endfor %}
