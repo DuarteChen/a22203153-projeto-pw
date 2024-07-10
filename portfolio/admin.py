@@ -1,6 +1,12 @@
 from django.contrib import admin
 from .models import *
+from embed_video.admin import AdminVideoMixin
+from .models import Videos
 
+class MyModelAdmin(AdminVideoMixin, admin.ModelAdmin):
+    pass
+
+admin.site.register(Videos, MyModelAdmin)
 
 
 admin.site.register(ScientificArea)

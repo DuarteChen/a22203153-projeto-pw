@@ -1,5 +1,5 @@
 {% extends 'portfolio/layout.html' %}
-
+{% load embed_video_tags %}
 {% block content %}
 <div class="login-wrapper" id ="pwLoginWraper">
     <div class="login-container" id ="pwbox">
@@ -74,7 +74,9 @@
     <div class="login-container" id ="pwbox">
 
         <p class="enfaseDePontos primeiro_enfaseDePontos">Vídeos de Apresentação</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ztaLaP-xkkA&ab_channel=DuarteChen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% for i in videos %}
+        {% video i.video %}
+        {% endfor %}
 
 
 

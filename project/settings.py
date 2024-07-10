@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'embed_video',
 
 
 ]
@@ -91,8 +92,8 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 # colocar path para view de login
-LOGIN_REDIRECT_URL = '/autenticacao/login/'
-LOGOUT_REDIRECT_URL = '/autenticacao/login/'
+LOGIN_REDIRECT_URL = '/user/'
+LOGOUT_REDIRECT_URL = '/login/'
 
 ####
 

@@ -15,10 +15,14 @@ Função geral para rederização de todas as páginas -------------------------
 '''
 def contextFun(request):
     username = request.user.username if request.user.is_authenticated else 'Guest'
+    videos = Videos.objects.all()
+
 
     context = {
         'anoAtual' : datetime.today().year,
-        'username': username
+        'username': username,
+        'videos': videos,
+
     }
 
     return context
