@@ -1,0 +1,32 @@
+{% extends 'portfolio/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="welcome news container" id="bands_welcome">
+        <div class="bandsList_container">
+            <h1 class="title">JornalOnline</h1>
+            <div class="bandsList">
+                {% if user.is_authenticated and perms.jornalOnline.add_article %}
+                <li class="band_item" id="addNewBand">
+                    <a href="{% url 'jornalOnline:add_article' %}">
+                        <img class="band_image" src="{% static 'bands/add_band.svg' %}" alt="Add Article">
+                    </a>
+                </li>
+                {% endif %}
+
+                {% for article in articles %}
+                    <li class="band_item">
+                        <a href="{% url 'jornalOnline:article_detail' article.id %}">
+                            <div class="bandList_description">
+                                <h2 class="description bandTitle">{{ article.title }}</h2>
+                                <p class="small_description">By {{ article.author.username }} on {{ article.publication_date|date:"F d, Y" }}</p>
+                                <p class="small_description">{{ article.get_category_display }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

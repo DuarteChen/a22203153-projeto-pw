@@ -1,0 +1,14 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+<div class="welcome" id = "bands_welcome">
+    <div class="band_itemDetails">
+    <h1 class="title">Add a New Article</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" id ="loginButton">Save</button>
+    </form>
+</div>
+</div>
+{% endblock %}

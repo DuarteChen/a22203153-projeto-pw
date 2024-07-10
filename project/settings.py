@@ -40,11 +40,13 @@ INSTALLED_APPS = [
     'portfolio',
     'meteo',
     'bands',
+    'jornalOnline',
     # Django Allauth apps
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+
 
 ]
 

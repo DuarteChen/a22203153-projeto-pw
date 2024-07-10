@@ -16,8 +16,8 @@
       </div>
       <p class="description">Sou estudante da Licenciatura em Engenharia Informática na Universidade Lusófona.</p>
       <div class="group-buttons">
-        <a href="#aboutMe" class="button_enfatizado">Get to know MeByMe</a>
-        <a href="#cursos" >Universidade</a>
+        <a href="#aboutMe" class="button_enfatizado" id = "aboutMeSection">Get to know MeByMe</a>
+        <a href="#cursos" id = "universidadeSection">Universidade</a>
       </div>
     </div>
       <img class="welcome-thumbnail" src="{% static 'DuarteChen.png' %}" alt="Duarte Chen"/>
@@ -124,7 +124,7 @@
 
             <div class="mySlides fade">
                 <div id = "webAPPContainer" class="band_itemDetails">
-                    <a href = "{% url 'bands:band_list' %}">
+                    <a href = "{% url 'bands:band_list' %}" id = "bandsButton">
                         <img class="webapp_image" src="{% static 'portfolio/BandsInWebScreen.png' %}" alt="Bands in Web - Web App">
                     </a>
                 </div>
@@ -132,14 +132,22 @@
 
             <div class="mySlides fade">
                 <div id = "webAPPContainer" class="band_itemDetails">
-                    <a href = "{% url 'meteo:previsao' %}">
+                    <a href = "{% url 'meteo:previsao' %}" id = "meteoButton">
                         <img class="webapp_image" src="{% static 'portfolio/MeteoInWebScreen.png' %}" alt="Bands in Web - Web App">
                     </a>
                 </div>
             </div>
 
+            <div class="mySlides fade">
+                <div id = "webAPPContainer" class="band_itemDetails">
+                    <a href = "{% url 'jornalOnline:article_list' %}">
+                        <img class="webapp_image" src="{% static 'portfolio/JornalInWebScreen.png' %}" alt="JornalOnline - Web App">
+                    </a>
+                </div>
+            </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+            <a class="prev" onclick="plusSlides(-1)" id = "webAppsButtonNext">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         </div>

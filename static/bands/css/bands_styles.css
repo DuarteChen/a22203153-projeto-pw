@@ -5,9 +5,10 @@
     align-items: center;
 }
 
-#bandsInWebTitle{
+.bands .title{
     font-size: 4rem;
-    text-align: center;
+    margin-right: auto;
+    margin: 32px 0 60px 0;
 }
 
 .bandsList {
@@ -21,7 +22,7 @@
     width: auto;
 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
 }
 
 
@@ -34,6 +35,8 @@
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 10px;
+    max-width: calc(25% - 12px);
+    flex: 1 1 100%;
 }
 
 .bandList_description{
@@ -52,6 +55,7 @@
 
     align-content: center;
     margin: 16px 0 0;
+
 }
 
 .bandTitle{
@@ -69,7 +73,6 @@
     padding: 10px;
 
     margin: 0 10px 10px 10px;
-
     min-width: 300px;
 }
 
@@ -81,11 +84,20 @@
 }
 
 .band_image {
-    width: 180px;
-    height: 180px;
     border-radius: 10px;
+
     object-fit: cover;
-    overflow: hidden;
+    aspect-ratio: 1;
+    width: 100%;
+    height: auto;
+}
+
+.bands-detail .band_image{
+    width: 50%;
+    aspect-ratio: 16/9;
+    object-position:top;
+    object-fit: cover;
+    height:auto;
 }
 
 .small_description{
@@ -141,9 +153,16 @@
 }
 
 @media (max-width: 900px) {
+
+    .band_item {
+        max-width: calc(50% - 12px);
+        flex: 1 1 100%;
+    }
+
     .band_description{
         flex-direction: column;
         gap: 10px
+
     }
 
     .title{
@@ -167,13 +186,14 @@
         margin: 0;
     }
 
+}
 
+@media (max-width: 500px) {
 
-    #bandsInWebTitle{
-        margin-bottom: 16px;
+    .band_item {
+        max-width: calc(100% - 10px);
+        flex: 1 1 100%;
     }
-
-
 }
 
 

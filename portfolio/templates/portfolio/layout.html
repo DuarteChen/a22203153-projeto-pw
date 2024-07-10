@@ -44,9 +44,11 @@
     <header class="header">
         <div class="container header-container">
           <div class="header-info">
-            <span class="info-name">
-              <a href="{% url 'portfolio:portfolio' %}">Duarte Chen</a>
-            </span>
+            <a href="{% url 'portfolio:portfolio' %}" id = "homebutton">
+                <span class="info-name">
+                    Duarte Chen
+                </span>
+            </a>
             <div class="info-description">
               <span>Estudante - Universidade Lusófona</span>
               <span>Licenciatura em Engenharia Informática</span>
@@ -54,9 +56,10 @@
           </div>
 
             <nav class="header-nav">
+                <a href = "{% url 'portfolio:pwView' %}">PW</a>
                 <a href="https://github.com/DuarteChen/a22203153-projeto-pw" onclick="window.open(this.href, '_blank');return false;">Github</a>
                 <a href="{% url 'portfolio:contacto' %}">Contacto</a>
-                <a {% if request.user.is_authenticated %} href="{% url 'portfolio:userView' %}" {% else %} href="{% url 'portfolio:login' %}" {% endif %}>{% if request.user.is_authenticated %}{{ username }}{% else %}Login{% endif %}</a>
+                <a {% if request.user.is_authenticated %} href="{% url 'portfolio:userView' %}" {% else %} href="{% url 'portfolio:login' %}" {% endif %} id = "loginButtonNav">{% if request.user.is_authenticated %}{{ username }}{% else %}Login{% endif %}</a>
             </nav>
 
 
@@ -86,13 +89,14 @@
     <!Footer>
     <footer>
 
-        <p>Duarte Chen - {{ anoAtual}}</p>
+        <p>© {{ anoAtual}} Duarte Chen</p>
         <ul class="social-icons">
             <li><a href="https://www.linkedin.com/in/duartechen/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/DuarteChen" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="https://www.instagram.com/duartenuno_schen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://www.facebook.com/DuarteChen" target="_blank"><i class="fab fa-facebook"></i></a></li>
         </ul>
+
     </footer>
 </body>
 </html>

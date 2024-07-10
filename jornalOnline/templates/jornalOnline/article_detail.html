@@ -1,0 +1,52 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block content %}
+<div class="welcome" id = "bands_welcome">
+    <div class="band_itemDetails">
+
+            <h1 class = "title" id = "articleTitle">{{ article.title }}</h1>
+            <p class= "lineHeightConfig">By {{ article.author.journalistName }} on {{ article.publication_date|date:"F d, Y" }}</p>
+            <p class= "lineHeightConfig">Category: {{ article.get_category_display }}</p>
+            {% if article.article_image %}
+                <img class="article-image" src="{{ article.article_image.url }}" alt="{{ article.title }}">
+            {% endif %}
+
+
+        <div class="article-detail-text lineHeightConfig">
+            <p>{{ article.text|linebreaksbr }}</p>
+        </div>
+
+    </div>
+
+    <div class="band_itemDetails">
+        <div class="comments-section">
+            <h2 class= "lineHeightConfig">Comments ({{ article.comments.count }})</h2>
+
+            {% if user.is_authenticated %}
+                <form method="post" action="{% url 'jornalOnline:add_comment' article.id %}">
+                    {% csrf_token %}
+                    {{ comment_form.text }}
+                    {% if comment_form.text.errors %}
+                        <div class="error">{{ comment_form.text.errors }}</div>
+                    {% endif %}
+                    <br>
+                    <button type="submit" id ="loginButton">Submit</button>
+                </form>
+            {% else %}
+                <p><a href="{% url 'portfolio:login' %}">Log in</a> to leave a comment.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    {% for comment in article.comments.all %}
+        <div class="band_itemDetails">
+                <p>{{ comment.text|linebreaksbr }}</p>
+                <p>By {{ comment.author.username }} on {{ comment.timestamp|date:"F d, Y H:i" }}</p>
+        </div>
+    {% endfor %}
+
+
+
+
+</div>
+{% endblock %}

@@ -140,11 +140,18 @@ def aboutMe_view(request):
     return render(request, "portfolio/aboutme.html", context)
 
 def subject_view(request, subjectId):
-    username = request.user.username if request.user.is_authenticated else 'Guest'
 
     context = contextFun(request)
     context['subject'] = Subject.objects.get(id=subjectId)
 
     return render(request, "portfolio/subject.html", context)
 
+
+def programacaoWeb(request):
+
+
+    context = contextFun(request)
+
+
+    return render(request, "portfolio/programacaoWeb.html", context)
 
