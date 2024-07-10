@@ -5,6 +5,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function init() {
     const btn = document.querySelector("#menu_toggle");
+    const btnThemePurple = document.querySelector("#purpleButton");
+
+    btn.addEventListener("click", function() {
+        document.querySelector("#menu_navigation").classList.toggle("is_active");
+    });
+
+    btnThemePurple.addEventListener("click", function() {
+        document.body.classList.toggle("purple-theme");
+
+
+        const isPurpleTheme = document.body.classList.contains("purple-theme");
+        localStorage.setItem("purpleTheme", isPurpleTheme ? "enabled" : "disabled");
+    });
+
+
+    const storedTheme = localStorage.getItem("purpleTheme");
+    if (storedTheme === "enabled") {
+        document.body.classList.add("purple-theme");
+    }
 
     document.addEventListener("click", documentEvents);
 }
@@ -16,6 +35,11 @@ function documentEvents(event) {
     if (event.target.id === "menu_toggle") {
         nav.classList.toggle("is_active");
     } else {
+        nav.classList.remove("is_active");
+    }
+
+
+    if (!event.target.closest("#menu_navigation") && !event.target.closest("#menu_toggle")) {
         nav.classList.remove("is_active");
     }
 }

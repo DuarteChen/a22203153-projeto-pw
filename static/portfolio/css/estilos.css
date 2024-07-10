@@ -10,6 +10,12 @@ body {
 }
 
 
+body.purple-theme {
+    background-color: #800080;
+    color: #ffffff;
+}
+
+
 
 
 * {

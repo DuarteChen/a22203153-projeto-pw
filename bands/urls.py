@@ -6,6 +6,11 @@ app_name = "bands"
 
 urlpatterns = [
     path('', band_list, name='band_list'),
+
+    path('recurso/', band_list_recurso, name='band_list_recurso'),
+
+    path('musics/json/', musicsJson, name='musicsJson'),
+
     path('<int:band_id>/', band_detail, name='band_detail'),
 
     path('add_band/', add_band, name='add_band_form'),

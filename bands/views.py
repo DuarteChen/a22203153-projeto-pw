@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import *
 from datetime import datetime
 from .forms import *
+from django.http import HttpResponse, JsonResponse
 
 
 
@@ -30,6 +31,20 @@ def band_list(request):
     context = contextFun(request)
     context['bands'] = bands
     return render(request, 'bands/band_list.html', context)
+
+
+
+
+def band_list_recurso(request):
+    bands = Band.objects.order_by('band_name')
+    bands = Band.objects.annotate(num_albums=models.Count('albums')).order_by('-num_albums')
+
+    context = contextFun(request)
+    context['bands'] = bands
+    return render(request, 'bands/band_list_recurso.html', context)
+
+
+
 
 
 def band_detail(request, band_id):
@@ -123,7 +138,24 @@ def music_detail(request, music_id):
     return render(request, 'bands/music_detail.html', context)
 
 
+def musicsJson(request):
 
+    musics = Music.objects.all()
+
+    listaMusicas = []
+
+    for music in musics:
+        music_data = {
+            'id': music.id,
+            'music_name': music.music_name,
+            'release_date': music.release_date,
+            'lyrics': music.lyrics,
+
+        }
+        listaMusicas.append(music_data)
+
+
+    return JsonResponse(listaMusicas, safe=False)
 
 
 

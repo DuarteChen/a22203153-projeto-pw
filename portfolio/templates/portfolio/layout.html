@@ -57,6 +57,7 @@
           </div>
 
             <nav class="header-nav">
+                <a href = "{% url 'bands:band_list_recurso' %}">Recurso</a>
                 <a href = "{% url 'portfolio:pwView' %}">PW</a>
                 <a href="https://github.com/DuarteChen/a22203153-projeto-pw" onclick="window.open(this.href, '_blank');return false;">Github</a>
                 <a href="{% url 'portfolio:contacto' %}">Contacto</a>
@@ -75,6 +76,8 @@
                 <a {% if request.user.is_authenticated %} href="{% url 'portfolio:userView' %}" {% else %} href="{% url 'portfolio:login' %}" {% endif %}>{% if request.user.is_authenticated %}{{ username }}{% else %}Login{% endif %}</a>
                 <a href="https://github.com/DuarteChen/a22203153-projeto-pw" onclick="window.open(this.href, '_blank');return false;">Github</a>
                 <a href="{% url 'portfolio:contacto' %}">Contacto</a>
+                <a href = "{% url 'portfolio:pwView' %}">PW</a>
+                <a href = "{% url 'bands:band_list_recurso' %}">Recurso</a>
 
             </nav>
 
@@ -97,6 +100,8 @@
             <li><a href="https://www.instagram.com/duartenuno_schen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://www.facebook.com/DuarteChen" target="_blank"><i class="fab fa-facebook"></i></a></li>
         </ul>
+
+        <button id="purpleButton">Purple Theme</button>
 
     </footer>
 </body>

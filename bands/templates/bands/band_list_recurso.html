@@ -1,0 +1,70 @@
+{% extends 'portfolio/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="welcome container bands" id = "bands_welcome">
+        <div class="bandsList_container">
+            <h1 class="title" id="bandsInWebTitle">Bands in Web</h1>
+            <div class="bandsList">
+                {% if user.is_authenticated and perms.bands.add_band %}
+                <li class="band_item" id = "addNewBand">
+                    <a href="{% url 'bands:add_band_form' %}">
+                        <img class="band_image" src="{% static 'bands/add_band.svg' %}" alt="Add Band">
+
+                    </a>
+                </li>
+                {% endif %}
+
+                </li>
+                {% for band in bands %}
+
+                    <li class="band_item">
+                        <a href="{% url 'bands:band_detail' band.id %}">
+
+                            {% if band.band_image %}
+                                <img class="band_image" src="{{ band.band_image.url }}" alt="{{ band.band_name }}">
+                            {% endif %}
+                            <div class = "bandList_description">
+                                <h2 class = "description bandTitle">{{ band.band_name }}, {{ band.start_date }}</h2>
+
+                                <p class = "small_description">{{ band.get_music_type_display }}</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    {% for album in band.albums.all  %}
+                    <li class="band_item">
+                        <a href="{% url 'bands:album_detail' album.id %}">
+
+                            <div class = "bandList_description">
+                                <h2 class = "description bandTitle">{{ album.album_name }}</h2>
+
+                                <p class = "small_description">{{ album.album_release_date }}</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    {% endfor %}
+                {% endfor %}
+
+
+
+            </div>
+
+            {% for band in bands %}
+                {% if forloop.first %}
+
+                        <a href= "{% url 'bands:band_detail' band.id %}">Banda com mais albums</a>
+                    </form>
+                {% endif %}
+            {% endfor %}
+
+            <a href="{% url 'bands:musicsJson' %}" class="back-button" id = "meteobackbutton">Musics json</a>
+
+
+
+        </div>
+    </div>
+
+{% endblock %}

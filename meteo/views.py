@@ -30,7 +30,7 @@ def cidadesJson(request):
         idCidade = form.cleaned_data.get('idCidade')
         url_previsao = f"{url_previsao_base}{idCidade}.json"
     else:
-        # Default to Lisbon if form is not valid or not submitted
+
         url_previsao = f"{url_previsao_base}1110600.json"
 
     resposta_previsao = requests.get(url_previsao)
