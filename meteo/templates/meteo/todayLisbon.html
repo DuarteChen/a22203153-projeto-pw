@@ -19,6 +19,7 @@
     </a>
 
     <div class="weather_container">
+        <a href="{% url 'meteo:previsaoJson' %}" class="back-button" id = "meteobackbutton">json</a>
         <div class="citySelectorContainer">
             <label for="citySelector">Cidade:</label>
             <form method="post" action="{% url 'meteo:previsao' %}">
@@ -52,7 +53,9 @@
                 </div>
             </div>
         </div>
+
     </div>
+
 
 </div>
 

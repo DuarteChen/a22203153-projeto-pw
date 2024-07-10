@@ -7,6 +7,7 @@ urlpatterns = [
 
 
     path('previsao/', views.cidades, name='previsao'),
+    path('previsao/json/', views.cidadesJson, name='previsaoJson'),
 
 
 ]
